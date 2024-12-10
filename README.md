@@ -1,6 +1,6 @@
 Para testar, eu executei tanto nos terminais integrados do VS Code (bash) quanto no CMD do Windows.
 Lembre-se de que precisa ter as depedencias necessárias instaladas na sua máquina:
----> (cmd windows) $pip install flask flask-jsonpify flask-sqlalchemy flask-restful
+<p></p>---> (cmd windows) $pip install flask flask-jsonpify flask-sqlalchemy flask-restful</p>
 Como executar:
   - Terminal bash no VS Code:
     1. Abra o arquivo no VS Code
