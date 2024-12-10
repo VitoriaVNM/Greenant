@@ -1,18 +1,16 @@
-Para testar, eu executei tanto nos terminais integrados do VS Code (bash) quanto no CMD do Windows.
-Lembre-se de que precisa ter as depedencias necessárias instaladas na sua máquina:
----> (cmd windows) $pip install flask flask-jsonpify flask-sqlalchemy flask-restful
-Como executar:
-  - Terminal bash no VS Code:
-    1. Abra o arquivo no VS Code
-    2. Abra um terminal Bash e navegue até o diretório do arquivo
-    3. Utilize o comando: Flask --app fizzbuzz run
-    4. Com o servidor rodando, abra outro terminal bash uma vez que o primeiro está ocupado
-    5. Navegue novamente até o diretório onde está o arquivo
-    6. Utilize o comando: curl -X POST http://127.0.0.1:5000/fizzbuzz -d '{"n": X}' -H "Content-Type: application/json"
-    7. Certifique-se de substituir o X pelo número do tamanho da lista !!!
-  - Terminal CMD do Windows:
-    1. São os mesmos passos do 1 ao 5 anteriores.
-    2. Utilize o comando: curl -X POST http://127.0.0.1:5000/fizzbuzz -d "{\\"n\\": X}" -H "Content-Type: application/json"
-    3. A diferença está no scape das "" no n
-    4. Certifique-se de substituir o X pelo número do tamanho da lista !!!
-  
+<h2>Como executar</h2>
+<p>Testado nos terminais bash (integrado no VSCode) e cmd (Windows). Antes de começar, certifique-se ter ter as dependencias necessárias instaladas na sua máquina:</p>
+<p>---> (cmd windows) $pip install flask flask-jsonpify flask-sqlalchemy flask-restful</p>
+
+<ol>
+  <li>Instale as dependencias necessárias com o comando acima</li>
+  <li>Abra o arquivo no VS Code</li>
+  <li>Abra um terminal Bash e navegue até o diretório do arquivo</li>
+  <li>Utilize o comando: Flask --app fizzbuzz run</li>
+  <li>Com o servidor rodando, abra outro terminal bash uma vez que o primeiro está ocupado</li>
+  <li>Navegue novamente até o diretório onde está o arquivo</li>
+  <li>Utilize o comando: curl -X POST http://127.0.0.1:5000/fizzbuzz -d '{"n": <b>X</b>}' -H "Content-Type: application/json"</li>
+  <li>Substituir o <b>X em negrito na linha acima</b> pelo número que deseja</li>
+</ol>
+<p>Para rodar diretamente no cmd do windows, basta seguir os 5 primeiros passos. O comando curl no cmd é um pouco diferente:
+<p>curl -X POST http://127.0.0.1:5000/fizzbuzz -d "{\\"n\\": <b>X</b>}" -H "Content-Type: application/json"</p>
